@@ -156,10 +156,11 @@
             </select>
         </div>
 
-        <button type="submit" class="submit btn btn-default">Submit</button>
+        <button type="submit" id="myBtn" class="submit btn btn-default">Submit</button>
     </form>
 
     <!-- Modal Pop Up Window -->
+
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -167,8 +168,9 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div class="modalName">Placeholder Modal Content</div>
-            <div class="modalPhoto"></div>
+            <p>You've matched with:</p>
+            <div class="modalName">User Match will go here</div>
+            <div class="modalPhoto">User Photo will go here</div>
         </div>
 
     </div>
@@ -213,15 +215,14 @@
                     console.log("AJAX post complete");
                 });
 
-                
+
 
             });
-
-            // Modal Code to pop up
+            // Get the modal
             var modal = document.getElementById('myModal');
 
             // Get the button that opens the modal
-            var btn = document.getElementByClassName("submit");
+            var btn = document.getElementById("myBtn");
 
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
