@@ -1,0 +1,21 @@
+body{
+    margin: 5%;
+}
+
+.inputBox{
+    border-bottom: 1px solid rgb(228, 220, 220);
+    border-top: 1px solid rgb(228, 220, 220);
+}
+
+h1{
+    border-bottom: 1px solid rgb(228, 220, 220);
+}
+
+.jumbotron{
+    margin: 0% 5%;
+    padding: 5%;
+}
+
+.form-control{
+    width: 25%;
+}
