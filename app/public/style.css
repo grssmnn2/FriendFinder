@@ -19,3 +19,7 @@ h1{
 .form-control{
     width: 25%;
 }
+
+.photoErr, .nameErr{
+    color: red;
+}
