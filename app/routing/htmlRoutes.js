@@ -1,13 +1,14 @@
 // includes 2 routes
 var path = require("path");
 
-// GET route is to survey
 module.exports = function(app){
+
+ // if survey page is requested, show survey page
 app.get("/survey", function(req,res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
 })
 
-// root route leading to home.html
+// if root page is requested, show home page
 app.get("/", function(req,res) {
     res.sendFile(path.join(__dirname, "../public/home.html"));
 })

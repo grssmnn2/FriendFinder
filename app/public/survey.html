@@ -206,12 +206,13 @@
                     }
 
                 };
-                // Question: What does this code do??
+                // POST new user to the api/friends page
                 $.ajax({
                     url: "/api/friends",
                     method: "POST"
                 }).done(function (response) {
-                    // retrieve data from url by making a route   
+                    // retrieve data from url by making a route 
+                    // send user match name and photo to the appropriate modal divs  
                     console.log("AJAX post complete");
                 });
 
