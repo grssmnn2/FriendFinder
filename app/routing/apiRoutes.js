@@ -1,7 +1,8 @@
 var path = require("path");
-var friends = require("../data/friends.js");
+var friends = require("../data/friends");
 
 // retrieve/show friend information when user requests this pathway
+module.exports = function(app){
 app.get("/api/friends", function(req, res) {
     // this route will display JSON of all possible friends
     res.json(friends);
@@ -19,8 +20,4 @@ app.post("/api/friends", function(req, res){
     friends.push(newUser);
     res.json(newUser);
 });
-
-
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-});
+};
