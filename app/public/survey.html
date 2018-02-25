@@ -1,205 +1,250 @@
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-            crossorigin="anonymous">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Friend Finder</title>
-    </head>
-    
-    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Friend Finder</title>
+</head>
 
-<h3>Survey Questions</h3>
-<form>
-    <div class="inputBox">
-    <h4>About You:</h4>
-    
-    <div class="form-group">
-        <label ><h4>Name (Required)</h4></label>
-        <input class="form-control" id="name" placeholder="Name">
-        <p class="nameErr"></p>
-    </div>
-    <div class="form-group">
-        <label ><h4>Link to Photo Image (Required)</h4></label>
-        <input class="form-control" id="photo" placeholder="Photo">
-        <p class="photoErr"></p>
-    </div>
-    </div>
-    <!-- Single button -->
-    <h3>Question 1</h3>
-    <h4>You would rather spend a night eating pizza and watching a movie than going to a dance party.</h4>
-    <div class="form-group">
+<body>
+
+    <h3>Survey Questions</h3>
+    <form>
+        <div class="inputBox">
+            <h4>About You:</h4>
+
+            <div class="form-group">
+                <label>
+                    <h4>Name (Required)</h4>
+                </label>
+                <input class="form-control" id="name" placeholder="Name">
+                <p class="nameErr"></p>
+            </div>
+            <div class="form-group">
+                <label>
+                    <h4>Link to Photo Image (Required)</h4>
+                </label>
+                <input class="form-control" id="photo" placeholder="Photo">
+                <p class="photoErr"></p>
+            </div>
+        </div>
+        <!-- Single button -->
+        <h3>Question 1</h3>
+        <h4>You would rather spend a night eating pizza and watching a movie than going to a dance party.</h4>
+        <div class="form-group">
             <label>Select An Option</label>
             <select class="form-control" id="q1">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
             </select>
         </div>
-     
-      <!-- Single button -->
-    <h3>Question 2</h3>
-    <h4>While kids are awesome, you would rather have dogs.</h4>
-    <div class="form-group">
+
+        <!-- Single button -->
+        <h3>Question 2</h3>
+        <h4>While kids are awesome, you would rather have dogs.</h4>
+        <div class="form-group">
             <label>Select An Option</label>
             <select class="form-control" id="q2">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
-            </select>
-        </div>  
-    <h3>Question 3</h3>
-    <h4>While dogs are awesome, you'd rather have cats.</h4>
-    <div class="form-group">
-            <label>Select An Option</label>
-            <select class="form-control" id="q3">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
-            </select>
-        </div>  
-    <h3>Question 4</h3>
-    <h4>While cats are awesome, you'd rather live a fur-free lifestyle.</h4>
-    <div class="form-group">
-            <label>Select An Option</label>
-            <select class="form-control" id="q4">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
-            </select>
-        </div> 
-    <h3>Question 5</h3>
-    <h4>You prefer a tropical sunburn than a frigid frostbite on your ideal vacation.</h4>
-    <div class="form-group">
-            <label>Select An Option</label>
-            <select class="form-control" id="q5">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
-            </select>
-        </div>   
-    <h3>Question 6</h3>
-    <h4>Intelligence means more to you than attractiveness.</h4>
-    <div class="form-group">
-            <label>Select An Option</label>
-            <select class="form-control" id="q6">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
-            </select>
-        </div> 
-    <h3>Question 7</h3>
-    <h4>Kindness means more to you than intelligence.</h4>
-    <div class="form-group">
-            <label>Select An Option</label>
-            <select class="form-control" id="q7">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
-            </select>
-        </div>  
-    <h3>Question 8</h3>
-    <h4>You 100% believe these surveys are the best way to find your perfect soulmate.</h4>
-    <div class="form-group">
-            <label>Select An Option</label>
-            <select class="form-control" id="q8">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
-            </select>
-        </div> 
-    <h3>Question 9</h3>
-    <h4>You think a lot about the environmental effect your actions have on the planet.</h4>
-    <div class="form-group">
-            <label>Select An Option</label>
-            <select class="form-control" id="q9">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
             </select>
         </div>
-    <h3>Question 10</h3>
-    <h4>You often wonder what the president of the United States is thinking.</h4>
-    <div class="form-group">
+        <h3>Question 3</h3>
+        <h4>While dogs are awesome, you'd rather have cats.</h4>
+        <div class="form-group">
+            <label>Select An Option</label>
+            <select class="form-control" id="q3">
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
+            </select>
+        </div>
+        <h3>Question 4</h3>
+        <h4>While cats are awesome, you'd rather live a fur-free lifestyle.</h4>
+        <div class="form-group">
+            <label>Select An Option</label>
+            <select class="form-control" id="q4">
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
+            </select>
+        </div>
+        <h3>Question 5</h3>
+        <h4>You prefer a tropical sunburn than a frigid frostbite on your ideal vacation.</h4>
+        <div class="form-group">
+            <label>Select An Option</label>
+            <select class="form-control" id="q5">
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
+            </select>
+        </div>
+        <h3>Question 6</h3>
+        <h4>Intelligence means more to you than attractiveness.</h4>
+        <div class="form-group">
+            <label>Select An Option</label>
+            <select class="form-control" id="q6">
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
+            </select>
+        </div>
+        <h3>Question 7</h3>
+        <h4>Kindness means more to you than intelligence.</h4>
+        <div class="form-group">
+            <label>Select An Option</label>
+            <select class="form-control" id="q7">
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
+            </select>
+        </div>
+        <h3>Question 8</h3>
+        <h4>You 100% believe these surveys are the best way to find your perfect soulmate.</h4>
+        <div class="form-group">
+            <label>Select An Option</label>
+            <select class="form-control" id="q8">
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
+            </select>
+        </div>
+        <h3>Question 9</h3>
+        <h4>You think a lot about the environmental effect your actions have on the planet.</h4>
+        <div class="form-group">
+            <label>Select An Option</label>
+            <select class="form-control" id="q9">
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
+            </select>
+        </div>
+        <h3>Question 10</h3>
+        <h4>You often wonder what the president of the United States is thinking.</h4>
+        <div class="form-group">
             <label>Select An Option</label>
             <select class="form-control" id="q10">
-                <option value = "1">1 (never would I ever)</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5 (yes, you know me too well)</option>
+                <option value="1">1 (never would I ever)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (yes, you know me too well)</option>
             </select>
-        </div> 
-      
-    <button type="submit" class="submit btn btn-default">Submit</button>
-</form>
+        </div>
 
-<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".submit").on("click", function (event) {
-            event.preventDefault();
-            if($("#name").val()===""){
-                $(".nameErr").html("Please enter a name.");
-            }else if ($("#photo").val()===""){
-                $(".photoErr").html("Please enter a photo link.");
-            }else{
-            var newUser = {
-                name: $("#name").val().trim(),
-                photo: $("#photo").val().trim(),
-                scores:[ $("#q1").val().trim(),
-                $("#q2").val().trim(),
-                $("#q3").val().trim(),
-                $("#q4").val().trim(),
-                $("#q5").val().trim(),
-                $("#q6").val().trim(),
-                $("#q7").val().trim(),
-                $("#q8").val().trim(),
-                $("#q9").val().trim(),
-                $("#q10").val().trim()
-            ]
-            }
-   
-        };
-            // Question: What does this code do??
-            $.ajax({
-                url: "/api/friends",
-                method: "POST"
-            }).done(function (response) {
-                // retrieve data from url by making a route   
-                console.log("AJAX post complete");
+        <button type="submit" class="submit btn btn-default">Submit</button>
+    </form>
+
+    <!-- Modal Pop Up Window -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modalName">Placeholder Modal Content</div>
+            <div class="modalPhoto"></div>
+        </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".submit").on("click", function (event) {
+                event.preventDefault();
+                if ($("#name").val() === "") {
+                    $(".nameErr").html("Please enter a name.");
+                } else if ($("#photo").val() === "") {
+                    $(".photoErr").html("Please enter a photo link.");
+                } else {
+                    var newUser = {
+                        name: $("#name").val().trim(),
+                        photo: $("#photo").val().trim(),
+                        scores: [$("#q1").val().trim(),
+                        $("#q2").val().trim(),
+                        $("#q3").val().trim(),
+                        $("#q4").val().trim(),
+                        $("#q5").val().trim(),
+                        $("#q6").val().trim(),
+                        $("#q7").val().trim(),
+                        $("#q8").val().trim(),
+                        $("#q9").val().trim(),
+                        $("#q10").val().trim()
+                        ]
+                    }
+
+                };
+                // Question: What does this code do??
+                $.ajax({
+                    url: "/api/friends",
+                    method: "POST"
+                }).done(function (response) {
+                    // retrieve data from url by making a route   
+                    console.log("AJAX post complete");
+                });
+
+                
+
             });
 
-            // add code to pop up modal here
-        });
-    });
+            // Modal Code to pop up
+            var modal = document.getElementById('myModal');
 
-</script>
+            // Get the button that opens the modal
+            var btn = document.getElementByClassName("submit");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+
+    </script>
 
 
 </body>
