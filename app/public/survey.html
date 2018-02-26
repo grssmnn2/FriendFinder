@@ -204,16 +204,14 @@
                         $("#q10").val().trim()
                         ]
                     }
-
+                    console.log(newUser);
                 };
                 // POST new user to the api/friends page
-                $.ajax({
-                    url: "/api/friends",
-                    method: "POST"
-                }).done(function (response) {
+                $.post("/api/friends", newUser).done(function (data) {
                     // retrieve data from url by making a route 
                     // send user match name and photo to the appropriate modal divs  
-                    console.log("AJAX post complete");
+                    $("#modalName").html(data.newUser.name);
+                    $("#modalPhoto").html(data.newUser.photo);
                 });
 
 
