@@ -10,7 +10,8 @@ app.use(bodyParser.json());
 
 
 // this file requires basic npm packages
-
+require('./app/routing/htmlRoutes')(app);
+require('./app/routing/apiRoutes')(app);
 
 
 
