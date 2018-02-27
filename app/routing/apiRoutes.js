@@ -14,19 +14,19 @@ app.post("/api/friends", function(req, res){
     var newUser = req.body; 
 //   loop through the entire friends list
     for (var i = 0; i < friends.length; i++) {  
-        var difference;
-        var maxDiff= 1000;
+        var difference = 0;
+        var minDiff = 500;
         var bestMatch;
         var bestMatchPhoto;
         // within this loop through each friends' score array
         for (var j=0; j<newUser.scores[j].length; i++){
-            //find absolute value of the difference between user score and friend score 
-            difference = Math.abs(newUser.scores[j]-friends[i].scores[j]);
+            //find absolute value of the difference between each user score and friend score and add to difference 
+            difference += Math.abs(newUser.scores[j]-friends[i].scores[j]);
         }
         // if this value is the new smallest difference,
         if(difference < maxDiff){  
-            // put this in variable maxDiff
-            maxDiff = difference;
+            // put this in variable minDiff
+            minDiff = difference;
             // store that specific friend match in the bestMatch variable
             bestMatch = friends[i].name;
             bestMatchPhoto = friends[i].photo;

@@ -208,7 +208,8 @@
 
                 };
                 // POST new user to the api/friends page
-                $.post("/api/friends", newUser).done(function (data) {
+                $.post("/api/friends", newUser)
+                .done(function (data) {
                     // use exported top match name and photo and place in appropriate modal div
                     $("#modalName").html(data.bestMatch);
                     $("#modalPhoto").attr("src", data.bestMatchPhoto);
@@ -216,7 +217,9 @@
                 })
             });
         });
-        // Get the modal
+
+
+        // javascript to to open modal
         var modal = document.getElementById('myModal');
 
         // Get the button that opens the modal
