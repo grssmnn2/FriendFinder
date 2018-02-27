@@ -2,6 +2,7 @@ var friends = require("../data/friends");
 
 // retrieve/show friend information when user requests this pathway
 module.exports = function(app){
+
 app.get("/api/friends", function(req, res) {
     // this route will display JSON of all possible friends
     res.json(friends);
@@ -14,8 +15,7 @@ app.post("/api/friends", function(req, res){
     var newUser = req.body;
     // store the scores array for each user in a variable
     var userScore = newUser.scores;
-    // add new user to the friends array
-    console.log(newUser);
+  
   
     for (var i = 0; i < friends.length; i++) {
   
@@ -24,11 +24,18 @@ app.post("/api/friends", function(req, res){
         // within this loop through each user's score
         for (var j=0; j<newUser.scores[j].length; i++){
             //find absolute value of the difference between user score and stored friend score 
+            difference = Math.abs(newUser.scores[j]-friends[i].scores);
         }
         // if this value is the new smallest difference, put this in variable
+        if(difference < maxDiff){
+            
+        }
         // send whatever sits in the smallest difference variable to the modal once loop is done
     }
     // send that user's photo and name to the modal div on survey.html
+    // add new user to the friends array
     friends.push(newUser);
 });
+
+
 };
