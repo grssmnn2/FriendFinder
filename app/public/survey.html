@@ -204,14 +204,18 @@
                         $("#q10").val().trim()
                         ]
                     }
-                    console.log(newUser);
+
                 };
                 // POST new user to the api/friends page
                 $.post("/api/friends", newUser).done(function (data) {
                     // retrieve data from url by making a route 
                     // send user match name and photo to the appropriate modal divs  
-                    $("#modalName").html(data.newUser.name);
-                    $("#modalPhoto").html(data.newUser.photo);
+                    // data comes from whatever user input is going through function, access only the image and 
+                    // name portion of input array
+                    $("#modalName").html(data.name);
+                    $("#modalPhoto").attr("src", data.photo);                
+                      
+                    })
                 });
 
 
@@ -242,7 +246,6 @@
                     modal.style.display = "none";
                 }
             }
-        });
 
     </script>
 
