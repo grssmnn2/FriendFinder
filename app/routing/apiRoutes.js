@@ -11,26 +11,28 @@ app.get("/api/friends", function(req, res) {
 // send data from input to friends.js to be stored as JSON
 // store information at this route as users finish survey
 app.post("/api/friends", function(req, res){
-    // req.body is equal to the JSON post sent from the user (uses body parser npm to show correctly)
-    var newUser = req.body;
-    // store the scores array for each user in a variable
-    var userScore = newUser.scores;
+    // req.body is equal to the entire JSON post sent from the user
+    var newUser = req.body; 
   
-  
-    for (var i = 0; i < friends.length; i++) {
-  
-        var difference = 0;
+    for (var i = 0; i < friends.length; i++) {  
+        var difference;
+        var maxDiff= 1000;
+        var bestMatch;
+        var bestMatchPhoto;
         // create a variable difference starting at zero
-        // within this loop through each user's score
+        // within this loop through each user's score array
         for (var j=0; j<newUser.scores[j].length; i++){
             //find absolute value of the difference between user score and stored friend score 
-            difference = Math.abs(newUser.scores[j]-friends[i].scores);
+            difference = Math.abs(newUser.scores[j]-friends[i].scores[j]);
         }
-        // if this value is the new smallest difference, put this in variable
+        // if this value is the new smallest difference, put this in variable maxDiff
         if(difference < maxDiff){
-            
+            maxDiff = difference;
+            bestMatch = friends[i].name;
+            bestMatchPhoto = friends[i].photo;
         }
         // send whatever sits in the smallest difference variable to the modal once loop is done
+
     }
     // send that user's photo and name to the modal div on survey.html
     // add new user to the friends array

@@ -212,8 +212,8 @@
                     // send user match name and photo to the appropriate modal divs  
                     // data comes from whatever user input is going through function, access only the image and 
                     // name portion of input array
-                    $("#modalName").html(data.name);
-                    $("#modalPhoto").attr("src", data.photo);                
+                    $("#modalName").html(data.bestMatch);
+                    $("#modalPhoto").attr("src", data.bestMatchPhoto);                
                       
                     })
                 });
