@@ -21,13 +21,13 @@ module.exports = function(app) {
       // within this loop through each friends' score array
       for (var j = 0; j < friends[i].scores.length; i++) {
         //find absolute value of the difference between user score total and friend score total
-        var reducedFriend = friends[i].scores.reduce(function(total, amount) {
-          return total + amount;
+        var reducedFriend = friends[i].scores.reduce(function(total, nextInput) {
+          return total + nextInput;
         });
-        var reducedUser = newUser.scores.reduce(function(total, amount) {
-          return total + amount;
+        var reducedUser = newUser.scores.reduce(function(total, nextInput) {
+          return total + nextInput;
         });
-        var difference = Math.abs(reducedUser - reducedFriend);
+        difference = Math.abs(reducedUser - reducedFriend);
     }
         // if this value is the new smallest difference,
         if (difference < minDiff) {
