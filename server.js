@@ -7,7 +7,8 @@ var PORT = 3000;
 // css won't show without this
 app.use(express.static(path.join(__dirname, './app/public')));
 // this comes from bodyparser documentation
-app.use(bodyParser.urlencoded({ extended: false }));
+// extended: true to allow arrays
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); 
 
 

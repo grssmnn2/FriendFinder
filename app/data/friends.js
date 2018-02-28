@@ -21,7 +21,7 @@ var friends = [
     ]
     },
     {
-    "name": "Mr. Rogers",
+    "name": "Fred",
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6UcjS9buXf7s2KB76oHMQLXu_OTz3o1tz3Uf3Q-HHi3S28TF1Q",
     "scores[]": [
     "1",
