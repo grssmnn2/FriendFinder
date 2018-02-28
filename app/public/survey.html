@@ -211,6 +211,7 @@
                 // POST new user to the api/friends page
                 $.post("/api/friends", newUser).done(function (data) {
                     // use exported top match name and photo and place in appropriate modal div
+                    // this happens once apiRoutes has gone through friends list and sent back a match
                     $("#modalName").html(data.bestMatch);
                     $("#modalPhoto").attr("src", data.bestMatchPhoto);
 
