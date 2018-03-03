@@ -170,7 +170,7 @@
             <span class="close">&times;</span>
             <p>You've matched with:</p>
             <div class="modalName">User Match will go here</div>
-            <div class="modalPhoto">User Photo will go here</div>
+            <img class="modalPhoto" src="" width = 250px>
         </div>
 
     </div>
@@ -192,7 +192,7 @@
                     // store user input in object
                     var newUser = {
                         name: $("#name").val().trim(),
-                        photo: $("#photo").val().trim(),
+                        photo: $("#photo").val(),
                         scores: [$("#q1").val().trim(),
                         $("#q2").val().trim(),
                         $("#q3").val().trim(),
@@ -210,10 +210,12 @@
                 };
                 // POST new user to the api/friends page
                 $.post("/api/friends", newUser).done(function (data) {
+                    // data is the response coming back from server
                     // use exported top match name and photo and place in appropriate modal div
                     // this happens once apiRoutes has gone through friends list and sent back a match
-                    $("#modalName").html(data.bestMatch);
-                    $("#modalPhoto").attr("src", data.bestMatchPhoto);
+                    console.log(data);
+                    $(".modalName").html(data.bestMatch);
+                    $(".modalPhoto").attr('src', data.bestMatchPhoto);
 
                 })
             });
