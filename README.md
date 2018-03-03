@@ -1,4 +1,4 @@
-![Title Page](main.png )
+![Title Page](images/main.png )
 
 # FriendFinder
 
@@ -14,25 +14,19 @@ express
 path
 body-parser
 ```
-use "npm install packageName --save" to run application on your local browser
+use "npm install packageName --save" in terminal to run application on your localhost:3000 webpage
 
-### Installing
+### App Demo
 
-A step by step series of examples that tell you have to get a development env running
+![survey page](images/survey.png )
+User completes a short survey.
+![user input ex](images/userinput.png )
+User must enter their name and link to an image before submitting.
+![survey page](images/friend.png )
+After hitting submit, user is given a best friend based on a combination of input.
+![survey page](images/apifriend.png )
+User is added to the database of friends to be a potential match for the next user. All noncoupled users are deleted when the server is restarted.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
