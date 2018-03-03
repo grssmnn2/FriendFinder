@@ -25,7 +25,7 @@ use "npm install packageName --save" in terminal to run application on your loca
 ![survey page](images/friend.PNG)
 #### After hitting submit, user is given a best friend based on a combination of input.
 ![survey page](images/apifriend.PNG)
-#### User is added to the database of friends to be a potential match for the next user. All noncoupled users are deleted when the server is restarted.
+#### User is added to the database of friends to be a potential match for the next user. All users entered are deleted when the server is restarted.
 
 ## Authors
 
