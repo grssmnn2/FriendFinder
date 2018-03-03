@@ -10,13 +10,13 @@ var friends = [
     "scores": [
     "1",
     "1",
-    "2",
     "1",
-    "2",
     "1",
-    "2",
     "1",
-    "2",
+    "1",
+    "1",
+    "1",
+    "1",
     "1"
     ]
     },
@@ -24,18 +24,34 @@ var friends = [
     "name": "Fred",
     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6UcjS9buXf7s2KB76oHMQLXu_OTz3o1tz3Uf3Q-HHi3S28TF1Q",
     "scores": [
-    "1",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1",
-    "2",
-    "1"
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
         ]
-        }
+        },
+    {
+        "name": "Jane",
+        "photo": "https://media.gadventures.com/media-server/dynamic/admin/content_pages/IMG00987.jpg",
+        "scores": [
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3",
+        "3"
+         ]
+         }
     
 ];
 
